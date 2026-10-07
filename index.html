@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="uz" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8f7f5" />
+    <meta name="description" content="Ish, ijod va o‘yin uchun noutbuklar. O‘zbekistonda tez yetkazib berish va ishonchli kafolat." />
+    <title>Laptop Lab — Sizga mos quvvat</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <svg class="svg-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></symbol>
+      <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M4 12h15M13 5l7 7-7 7" /></symbol>
+      <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l1 12H4L5 8Z" /><path d="M9 9V6a3 3 0 0 1 6 0v3" /></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8" /><path d="m16 16 4.5 4.5" /></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.3 15.2A8.5 8.5 0 0 1 8.8 3.7 8.6 8.6 0 1 0 20.3 15.2Z" /></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" /></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" /></symbol>
+      <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 6h11v12H3zM14 10h4l3 3v5h-7z" /><circle cx="7.5" cy="18" r="1.5" /><circle cx="17.5" cy="18" r="1.5" /></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z" /><path d="m9 12 2 2 4-4" /></symbol>
+      <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3" /><path d="M3 10h18M7 15h3" /></symbol>
+      <symbol id="i-headset" viewBox="0 0 24 24"><path d="M4 13v-1a8 8 0 0 1 16 0v1" /><path d="M4 13h3v6H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 1-2Zm16 0h-3v6h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-1-2ZM17 19c-.8 1.3-2.1 2-4 2" /></symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 1.7 5.3L19 10l-5.3 1.7L12 17l-1.7-5.3L5 10l5.3-1.7L12 3Z" /><path d="m19 16 .9 2.1L22 19l-2.1.9L19 22l-.9-2.1L16 19l2.1-.9L19 16Z" /></symbol>
+      <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2" /><path d="M9 2v4m6-4v4m-6 12v4m6-4v4M2 9h4m-4 6h4m12-6h4m-4 6h4M10 10h4v4h-4z" /></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 8.8c0 5.2-8.8 11-8.8 11s-8.8-5.8-8.8-11a4.8 4.8 0 0 1 8.8-2.6 4.8 4.8 0 0 1 8.8 2.6Z" /></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></symbol>
+      <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14" /></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6" /></symbol>
+      <symbol id="i-laptop" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="12" rx="1.8" /><path d="m2 20 1.2-3h17.6l1.2 3H2Z" /></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z" /></symbol>
+    </svg>
+
+    <div class="announcement-bar">
+      <div class="announcement-inner container">
+        <div class="announcement-copy"><span class="announcement-spark">✦</span><span data-i18n="announcement.text">2 000 000 so‘mdan boshlab yetkazib berish bepul</span></div>
+        <a class="announcement-link" href="#shop"><span data-i18n="announcement.link">Takliflarni ko‘rish</span><svg class="icon"><use href="#i-arrow-up-right" /></svg></a>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="header-inner container">
+        <a class="brand" href="#top" aria-label="Laptop Lab home" data-i18n-aria-label="header.home">
+          <span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="5" width="24" height="17" rx="4" /><path d="m2.5 26 2-3h23l2 3h-27Z" /><circle cx="16" cy="13.5" r="3" /></svg></span>
+          <span class="brand-word">laptop<span class="brand-period">.</span><small>lab</small></span>
+        </a>
+
+        <nav class="primary-nav" id="primaryNav" aria-label="Primary navigation" data-i18n-aria-label="header.navigation">
+          <a href="#shop" data-i18n="nav.products">Noutbuklar</a>
+          <a href="#categories" data-i18n="nav.categories">Kategoriyalar</a>
+          <a href="#services" data-i18n="nav.services">Xizmatlar</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-button search-jump" id="searchJump" type="button" aria-label="Qidirish" data-i18n-aria-label="header.search" title="Qidirish">
+            <svg class="icon"><use href="#i-search" /></svg>
+          </button>
+          <div class="language-picker" role="group" aria-label="Tilni tanlang" data-i18n-aria-label="header.language">
+            <button class="language-button is-active" type="button" data-lang="uz" aria-pressed="true">UZ</button>
+            <button class="language-button" type="button" data-lang="ru" aria-pressed="false">RU</button>
+            <button class="language-button" type="button" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+          <button class="icon-button theme-toggle" id="themeToggle" type="button" aria-label="Tungi rejimni yoqish" data-i18n-aria-label="header.themeLight" aria-pressed="false" title="Tungi rejim">
+            <svg class="icon theme-sun"><use href="#i-sun" /></svg>
+            <svg class="icon theme-moon"><use href="#i-moon" /></svg>
+          </button>
+          <button class="cart-trigger" id="cartTrigger" type="button" aria-label="Savat" data-i18n-aria-label="header.cart">
+            <svg class="icon"><use href="#i-bag" /></svg>
+            <span class="cart-trigger-label" data-i18n="header.cart">Savat</span>
+            <span class="cart-count" id="cartCount" aria-live="polite">0</span>
+          </button>
+          <button class="icon-button menu-toggle" id="menuToggle" type="button" aria-label="Menyuni ochish" data-i18n-aria-label="header.menuOpen" aria-expanded="false" aria-controls="mobileMenu">
+            <svg class="icon"><use href="#i-menu" /></svg>
+          </button>
+        </div>
+      </div>
+      <nav class="mobile-menu container" id="mobileMenu" aria-label="Mobile navigation" hidden>
+        <a href="#shop" data-i18n="nav.products">Noutbuklar</a>
+        <a href="#categories" data-i18n="nav.categories">Kategoriyalar</a>
+        <a href="#services" data-i18n="nav.services">Xizmatlar</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container" id="top" aria-labelledby="heroTitle">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="hero.eyebrow">YANGI MAVSUM · 2026</span></p>
+          <h1 id="heroTitle"><span data-i18n="hero.titleA">Katta g‘oyalar</span><br /><em data-i18n="hero.titleB">katta quvvat talab qiladi.</em></h1>
+          <p class="hero-description" data-i18n="hero.description">Ish, ijod va o‘yin uchun tanlangan noutbuklar. Sizga mos texnologiyani toping — qolganini biz hal qilamiz.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#shop"><span data-i18n="hero.primary">Noutbuklarni ko‘rish</span><svg class="icon"><use href="#i-arrow-up-right" /></svg></a>
+            <a class="button button-quiet" href="#services"><span data-i18n="hero.secondary">Mutaxassis bilan tanlash</span></a>
+          </div>
+          <div class="hero-social-proof">
+            <div class="avatar-stack" aria-hidden="true"><span>AK</span><span>MN</span><span>DS</span><span class="avatar-more">+</span></div>
+            <div class="proof-copy"><div class="rating-stars" aria-label="5 stars" data-i18n-aria-label="hero.ratingAlt">★★★★★ <strong>4.9</strong></div><span data-i18n="hero.proof">2 400+ mamnun xaridor</span></div>
+          </div>
+        </div>
+
+        <div class="hero-showcase" aria-label="Yangi avlod noutbuki" data-i18n-aria-label="hero.showcaseAlt">
+          <div class="showcase-halo"></div>
+          <div class="showcase-orbit orbit-one"></div>
+          <div class="showcase-orbit orbit-two"></div>
+          <div class="hero-image-frame">
+            <img src="assets/images/hero-laptop.png" alt="Qizil ekranli premium noutbuk" data-i18n-alt="hero.imageAlt" fetchpriority="high" />
+            <div class="image-shimmer"></div>
+          </div>
+          <div class="glass-note note-display"><span class="note-icon"><svg class="icon"><use href="#i-spark" /></svg></span><span><strong data-i18n="hero.screen">2.8K OLED ekran</strong><small data-i18n="hero.screenSub">Ranglar yanada jonli</small></span></div>
+          <div class="glass-note note-offer"><span class="offer-tag" data-i18n="hero.offerLabel">BIRINCHI XARIDGA</span><strong>−15<small>%</small></strong><span data-i18n="hero.offerText">chegirma</span></div>
+          <div class="hero-model-chip"><span class="chip-pulse"></span><span>NOVA <strong>G16</strong></span><span class="chip-divider"></span><span data-i18n="hero.modelTag">YANGI</span></div>
+          <p class="hero-art-caption"><span>01 / 03</span><span data-i18n="hero.artCaption">Kelajak hozirdan boshlanadi</span></p>
+        </div>
+      </section>
+
+      <section class="trust-strip container" aria-label="Laptop Lab benefits" data-i18n-aria-label="trust.aria">
+        <div class="trust-item"><span class="trust-icon"><svg class="icon"><use href="#i-truck" /></svg></span><span><strong data-i18n="trust.deliveryTitle">Tezkor yetkazish</strong><small data-i18n="trust.deliveryText">Toshkent bo‘ylab 24 soat</small></span></div>
+        <span class="trust-divider"></span>
+        <div class="trust-item"><span class="trust-icon"><svg class="icon"><use href="#i-shield" /></svg></span><span><strong data-i18n="trust.warrantyTitle">Rasmiy kafolat</strong><small data-i18n="trust.warrantyText">Har bir qurilmaga 1 yil</small></span></div>
+        <span class="trust-divider"></span>
+        <div class="trust-item"><span class="trust-icon"><svg class="icon"><use href="#i-card" /></svg></span><span><strong data-i18n="trust.paymentTitle">Qulay to‘lov</strong><small data-i18n="trust.paymentText">12 oygacha bo‘lib to‘lash</small></span></div>
+        <span class="trust-divider"></span>
+        <div class="trust-item"><span class="trust-icon"><svg class="icon"><use href="#i-headset" /></svg></span><span><strong data-i18n="trust.supportTitle">Jonli yordam</strong><small data-i18n="trust.supportText">Har kuni 09:00 — 22:00</small></span></div>
+      </section>
+
+      <section class="categories-section section-pad" id="categories" aria-labelledby="categoryTitle">
+        <div class="container">
+          <div class="section-heading category-heading">
+            <div><p class="section-kicker" data-i18n="category.kicker">O‘ZINGIZGA MOSINI TOPING</p><h2 id="categoryTitle" data-i18n="category.title">Nima uchun ishlatasiz?</h2><p data-i18n="category.description">Maqsadingizni tanlang — mos qurilmalar sizni kutmoqda.</p></div>
+            <a class="text-link" href="#shop"><span data-i18n="category.all">Barcha noutbuklar</span><svg class="icon"><use href="#i-arrow-right" /></svg></a>
+          </div>
+          <div class="category-grid">
+            <button class="category-card category-office" type="button" data-filter="office">
+              <span class="category-card-top"><span class="category-icon"><svg class="icon"><use href="#i-laptop" /></svg></span><span class="category-arrow"><svg class="icon"><use href="#i-arrow-up-right" /></svg></span></span>
+              <span class="category-name" data-i18n="category.office">Ofis va o‘qish</span><span class="category-sub" data-i18n="category.officeSub">Yengil. Ishonchli. Har kunlik.</span>
+            </button>
+            <button class="category-card category-gaming" type="button" data-filter="gaming">
+              <span class="category-card-top"><span class="category-icon"><svg class="icon"><use href="#i-cpu" /></svg></span><span class="category-arrow"><svg class="icon"><use href="#i-arrow-up-right" /></svg></span></span>
+              <span class="category-name" data-i18n="category.gaming">Geyming</span><span class="category-sub" data-i18n="category.gamingSub">Kuchli grafika. Yuksak tezlik.</span>
+            </button>
+            <button class="category-card category-creator" type="button" data-filter="creator">
+              <span class="category-card-top"><span class="category-icon"><svg class="icon"><use href="#i-spark" /></svg></span><span class="category-arrow"><svg class="icon"><use href="#i-arrow-up-right" /></svg></span></span>
+              <span class="category-name" data-i18n="category.creator">Dizayn va ijod</span><span class="category-sub" data-i18n="category.creatorSub">Har bir detalda aniqlik.</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="shop-section container section-pad" id="shop" aria-labelledby="shopTitle">
+        <div class="section-heading shop-heading">
+          <div><p class="section-kicker" data-i18n="shop.kicker">SIZ UCHUN TANLANDI</p><h2 id="shopTitle"><span data-i18n="shop.titleA">Ommabop</span> <span class="heading-accent" data-i18n="shop.titleB">noutbuklar.</span></h2><p data-i18n="shop.description">Ishonchli brendlar, puxta tanlov va to‘g‘ri narx.</p></div>
+          <div class="shop-controls">
+            <label class="search-field"><svg class="icon"><use href="#i-search" /></svg><span class="sr-only" data-i18n="shop.searchLabel">Noutbuk qidirish</span><input id="productSearch" type="search" autocomplete="off" data-i18n-placeholder="shop.searchPlaceholder" placeholder="Modelni qidiring..." /></label>
+            <label class="sort-field"><span class="sr-only" data-i18n="shop.sortLabel">Saralash</span><select id="sortSelect" aria-label="Saralash" data-i18n-aria-label="shop.sortLabel"><option value="featured" data-i18n="shop.sortFeatured">Tavsiya qilingan</option><option value="price-asc" data-i18n="shop.sortLow">Arzonidan</option><option value="price-desc" data-i18n="shop.sortHigh">Qimmatidan</option></select></label>
+          </div>
+        </div>
+        <div class="filter-row" role="group" aria-label="Product filters" data-i18n-aria-label="shop.filters">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true" data-i18n="shop.filterAll">Barchasi</button>
+          <button class="filter-button" type="button" data-filter="office" aria-pressed="false" data-i18n="shop.filterOffice">Ofis</button>
+          <button class="filter-button" type="button" data-filter="gaming" aria-pressed="false" data-i18n="shop.filterGaming">Geyming</button>
+          <button class="filter-button" type="button" data-filter="creator" aria-pressed="false" data-i18n="shop.filterCreator">Ijod</button>
+          <span class="product-result-count" id="resultCount" aria-live="polite"></span>
+        </div>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+        <div class="no-results" id="noResults" hidden><span class="no-results-icon"><svg class="icon"><use href="#i-search" /></svg></span><p data-i18n="shop.noResults">Hech narsa topilmadi. Boshqa so‘z bilan qidirib ko‘ring.</p><button class="button button-outline" type="button" id="clearSearch" data-i18n="shop.clearSearch">Qidiruvni tozalash</button></div>
+        <div class="shop-bottom-note"><span class="small-pulse"></span><span data-i18n="shop.stockNote">Barcha modellar do‘konda mavjud — bugunoq buyurtma bering</span></div>
+      </section>
+
+      <section class="promo-section container" aria-labelledby="promoTitle">
+        <div class="promo-copy">
+          <p class="section-kicker" data-i18n="promo.kicker">TEXNOLOGIYANI OSON TANLANG</p>
+          <h2 id="promoTitle"><span data-i18n="promo.titleA">Sizning keyingi</span><br /><span data-i18n="promo.titleB">katta qadamingiz.</span></h2>
+          <p data-i18n="promo.description">To‘g‘ri noutbukni tanlashda ikkilanayapsizmi? Mutaxassislarimiz ehtiyojingizga mos variantni topib beradi.</p>
+          <a class="button button-light" href="#services"><span data-i18n="promo.button">Bepul maslahat oling</span><svg class="icon"><use href="#i-arrow-up-right" /></svg></a>
+          <span class="promo-footnote"><svg class="icon"><use href="#i-check" /></svg><span data-i18n="promo.note">Majburiyatsiz. 10 daqiqa. To‘g‘ri tanlov.</span></span>
+        </div>
+        <div class="promo-visual">
+          <div class="promo-glow"></div>
+          <img src="assets/images/laptop-gaming.png" alt="Kuchli grafikaga ega premium noutbuk" loading="lazy" data-i18n-alt="promo.imageAlt" />
+          <div class="promo-product-sticker"><span data-i18n="promo.stickerTop">YANGI</span><strong>RTX<br />40</strong><small>GEFORCE</small></div>
+          <div class="promo-glass-pill"><svg class="icon"><use href="#i-spark" /></svg><span data-i18n="promo.glassTag">Quvvatni his qiling</span></div>
+        </div>
+      </section>
+
+      <section class="benefits-section section-pad" id="services" aria-labelledby="benefitsTitle">
+        <div class="container">
+          <div class="section-heading centered-heading"><div><p class="section-kicker" data-i18n="benefits.kicker">BIZNING VA’DAMIZ</p><h2 id="benefitsTitle" data-i18n="benefits.title">Sotuvdan keyin ham yoningizdamiz.</h2><p data-i18n="benefits.description">Xaridingizni xotirjam va yoqimli qiladigan xizmatlar.</p></div></div>
+          <div class="benefit-grid">
+            <article class="benefit-card"><span class="benefit-icon"><svg class="icon"><use href="#i-truck" /></svg></span><span class="benefit-index">01</span><h3 data-i18n="benefits.deliveryTitle">Eshigingizgacha</h3><p data-i18n="benefits.deliveryText">Toshkent bo‘ylab bepul, hududlarga tezkor va xavfsiz yetkazib beramiz.</p></article>
+            <article class="benefit-card"><span class="benefit-icon"><svg class="icon"><use href="#i-shield" /></svg></span><span class="benefit-index">02</span><h3 data-i18n="benefits.warrantyTitle">Ishonchli kafolat</h3><p data-i18n="benefits.warrantyText">Faqat original mahsulotlar va rasmiy servis bilan to‘liq kafolat.</p></article>
+            <article class="benefit-card"><span class="benefit-icon"><svg class="icon"><use href="#i-headset" /></svg></span><span class="benefit-index">03</span><h3 data-i18n="benefits.consultTitle">Shaxsiy maslahat</h3><p data-i18n="benefits.consultText">Texnik mutaxassislarimiz savollaringizga sodda va aniq javob beradi.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter-section container" aria-labelledby="newsletterTitle">
+        <div class="newsletter-icon"><svg class="icon"><use href="#i-spark" /></svg></div>
+        <div class="newsletter-copy"><p class="section-kicker" data-i18n="newsletter.kicker">YANGILIKLARDAN BIRINCHI BO‘LIB</p><h2 id="newsletterTitle" data-i18n="newsletter.title">Yaxshi texnologiya. Yaxshi takliflar.</h2><p data-i18n="newsletter.description">Yangi kelganlar va maxsus chegirmalar haqida xabar beramiz.</p></div>
+        <form class="newsletter-form" id="newsletterForm"><label class="sr-only" for="newsletterEmail" data-i18n="newsletter.emailLabel">Elektron pochta manzilingiz</label><input id="newsletterEmail" type="email" required autocomplete="email" data-i18n-placeholder="newsletter.placeholder" placeholder="Email manzilingiz" /><button class="button button-primary" type="submit"><span data-i18n="newsletter.button">Obuna bo‘lish</span><svg class="icon"><use href="#i-arrow-right" /></svg></button></form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div class="footer-brand-column"><a class="brand" href="#top" aria-label="Laptop Lab home" data-i18n-aria-label="header.home"><span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="5" width="24" height="17" rx="4" /><path d="m2.5 26 2-3h23l2 3h-27Z" /><circle cx="16" cy="13.5" r="3" /></svg></span><span class="brand-word">laptop<span class="brand-period">.</span><small>lab</small></span></a><p data-i18n="footer.tagline">Yaxshi tanlov — yaxshi kunning boshlanishi.</p><div class="social-links"><a href="#contact" aria-label="Instagram">ig</a><a href="#contact" aria-label="Telegram">tg</a><a href="#contact" aria-label="YouTube">yt</a></div></div>
+        <div class="footer-column"><h3 data-i18n="footer.catalog">Katalog</h3><a href="#shop" data-i18n="nav.products">Noutbuklar</a><a href="#categories" data-i18n="category.office">Ofis va o‘qish</a><a href="#categories" data-i18n="category.gaming">Geyming</a><a href="#categories" data-i18n="category.creator">Dizayn va ijod</a></div>
+        <div class="footer-column"><h3 data-i18n="footer.help">Yordam</h3><a href="#services" data-i18n="footer.delivery">Yetkazib berish</a><a href="#services" data-i18n="footer.warranty">Kafolat va servis</a><a href="#services" data-i18n="footer.payment">To‘lov usullari</a><a href="#services" data-i18n="nav.services">Xizmatlar</a></div>
+        <div class="footer-column footer-contact" id="contact"><h3 data-i18n="footer.contact">Biz bilan bog‘laning</h3><a class="footer-phone" href="tel:+998712000202">+998 71 200 02 02</a><span data-i18n="footer.hours">Har kuni · 09:00–22:00</span><a href="mailto:hello@laptoplab.uz">hello@laptoplab.uz</a></div>
+      </div>
+      <div class="container footer-bottom"><span>© 2026 Laptop Lab</span><span data-i18n="footer.rights">Barcha huquqlar himoyalangan</span><a href="#top" class="back-to-top"><span data-i18n="footer.top">Yuqoriga</span><svg class="icon"><use href="#i-arrow-up-right" /></svg></a></div>
+    </footer>
+
+    <div class="cart-overlay" id="cartOverlay" hidden>
+      <button class="overlay-backdrop" type="button" data-close-cart aria-label="Close cart" data-i18n-aria-label="cart.close"></button>
+      <aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+        <div class="drawer-header"><div><p class="section-kicker" data-i18n="cart.eyebrow">XARIDLAR</p><h2 id="cartTitle"><span data-i18n="cart.title">Savat</span> <span class="drawer-count" id="drawerCount">(0)</span></h2></div><button class="icon-button" id="closeCart" type="button" aria-label="Close cart" data-i18n-aria-label="cart.close"><svg class="icon"><use href="#i-close" /></svg></button></div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-empty" id="cartEmpty"><span class="empty-bag"><svg class="icon"><use href="#i-bag" /></svg></span><h3 data-i18n="cart.emptyTitle">Savatingiz hozircha bo‘sh</h3><p data-i18n="cart.emptyText">O‘zingizga mos noutbukni tanlashdan boshlang.</p><button class="button button-outline" type="button" data-close-cart data-i18n="cart.continue">Xaridni davom ettirish</button></div>
+        <div class="drawer-footer" id="drawerFooter"><div class="subtotal-line"><span data-i18n="cart.subtotal">Jami</span><strong id="cartTotal">0 so‘m</strong></div><p class="cart-shipping-note"><svg class="icon"><use href="#i-truck" /></svg><span data-i18n="cart.shipping">Yetkazib berish keyingi bosqichda hisoblanadi</span></p><button class="button button-primary checkout-button" id="checkoutButton" type="button"><span data-i18n="cart.checkout">Buyurtmani rasmiylashtirish</span><svg class="icon"><use href="#i-arrow-right" /></svg></button><p class="secure-note"><svg class="icon"><use href="#i-shield" /></svg><span data-i18n="cart.secure">Xavfsiz va ishonchli xarid</span></p></div>
+      </aside>
+    </div>
+
+    <div class="quick-overlay" id="quickOverlay" hidden>
+      <button class="quick-backdrop" type="button" data-close-quick aria-label="Close details" data-i18n-aria-label="quick.close"></button>
+      <section class="quick-modal" role="dialog" aria-modal="true" aria-labelledby="quickTitle">
+        <button class="icon-button quick-close" type="button" data-close-quick aria-label="Close details" data-i18n-aria-label="quick.close"><svg class="icon"><use href="#i-close" /></svg></button>
+        <div id="quickContent"></div>
+      </section>
+    </div>
+
+    <div class="toast-stack" id="toastStack" role="status" aria-live="polite" aria-atomic="true"></div>
+  </body>
+</html>
